@@ -1,0 +1,6 @@
+node_modules/
+subscribers.json
+digest-state.json
+.env
+.DS_Store
+*.log

@@ -1,0 +1,15 @@
+{
+  "name": "bounty-email-digest",
+  "version": "1.0.0",
+  "description": "Service that sends daily/weekly email digests of new bounties matching subscriber preferences.",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch run index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "keywords": ["bounty", "email", "digest", "notifications", "resend"],
+  "license": "MIT"
+}
