@@ -1,16 +1,25 @@
 # bounty-email-digest
 
-Email digest service for the AI Bounty Board. Sends daily or weekly email digests of new bounties matching subscriber tag preferences via the Resend API.
+Email digest service with **email subscription endpoint**, **tag-based filtering**, **daily/weekly digest options**, and **unsubscribe link** for the AI Bounty Board.
 
 ## Features
 
-- Subscriber management: add/remove email subscribers with tag preferences
-- Tag-based filtering: only receive bounties matching your interests
-- Daily or weekly digest frequency per subscriber
+- **Email subscription endpoint** — REST API to subscribe/unsubscribe with email, tags, and frequency preferences
+- **Tag-based filtering** — subscribers only receive bounties matching their tag interests
+- **Daily/weekly digest options** — configurable per subscriber (daily or weekly frequency)
+- **Unsubscribe link** — every email includes a one-click unsubscribe link
 - Formatted HTML emails with bounty details, amounts, and tags
 - Uses Resend API (free tier: 3,000 emails/month)
 - Email preview endpoint for testing
 - Dry-run mode when Resend API key is not configured
+
+## Deploy Instructions
+
+1. Clone the repo: `git clone https://github.com/sigmaSC/bounty-email-digest`
+2. Install dependencies: `bun install`
+3. Configure environment: `cp .env.example .env` and add your Resend API key
+4. Start the server: `bun run start`
+5. For production, deploy to any platform supporting Bun (Railway, Fly.io, Render)
 
 ## Quick Start
 
